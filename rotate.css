@@ -1,0 +1,193 @@
+@font-face {
+	font-family: 'Montserrat-Bold';
+	src: url('Montserrat/Montserrat-Bold.ttf');
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('Montserrat/Montserrat-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'PressStart2P';
+	src: url('Press_Start_2P/PressStart2P-Regular.ttf');
+}
+
+.montserrat {
+	font-family: Montserrat;
+}
+
+.montserrat-bold {
+	font-family: Montserrat-Bold;
+}
+
+.coding {
+	font-family: PressStart2P;
+	color: white;
+	background: black;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	border-radius: 5px;
+}
+
+
+.sideways_up {
+	-webkit-transform: rotate(-90deg);
+	display:inline-block;
+}
+
+.sideways_down {
+	-webkit-transform: rotate(90deg);
+	display:inline-block;
+}
+
+.upside_down {
+	-webkit-transform:  rotate(180deg); 
+	display:inline-block;
+}
+
+.triangle-up {
+	width: 0; 
+	height: 0; 
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+	border-bottom: 60px solid red;
+}
+
+
+.triangle-down {
+	width: 0; 
+	height: 0; 
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+	border-top: 60px solid red;
+}
+
+.triangle-right {
+	width: 0; 
+	height: 0; 
+	border-top: 60px solid transparent;
+	border-bottom: 60px solid transparent;
+	border-left: 60px solid green;
+}
+
+.triangle-left {
+	width: 0; 
+	height: 0; 
+	border-top: 60px solid transparent;
+	border-bottom: 60px solid transparent; 
+	
+	border-right:60px solid green; 
+}
+
+/* CONSIDER HTML BLOCKQUOTE */
+
+.quote {
+	background: #CCC;
+	border-radius: 5px;
+	display: inline-block;
+	padding: 10px;
+	position: relative;
+	margin-left: 8%;
+	width: 80%;
+}
+
+.quote i:first-child {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+
+.quote i:last-child {
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+}
+
+.inside_quote {
+	display: inline-block;
+	margin-left: 15px;
+	margin-right: 12px;
+
+}
+
+.calendar {
+	width: 40px;
+	font-family: Montserrat-Bold;
+	text-align: center
+}
+
+.container ul li {
+	display: none;
+	cursor: pointer;
+}
+
+.container ul li:target {
+	display: block;
+}
+
+/* BLOCKQUOTE - HTML */
+
+/* TRY DROPDOWN MENU */
+
+/* OR ACCORDION MENU WITH JQUERY or JQUERY UI */
+
+/* ACCORDION MENU */
+/*
+.container {
+	width: 100%;
+	max-width:400px;
+}
+
+.accordion {
+	width: 100%;
+	padding:0;
+	margin:0;
+	list-style-type:none;
+}
+
+.accordion-header {
+	display:block;
+	padding:15px 20px;
+	text-decoration:none;
+	margin-bottom: 5px;
+}
+
+.accordion-content {
+	padding: 0;
+	height: 0;
+	overflow: hidden;
+}
+
+.accordion-content:target {
+	height:auto;
+	padding: 20px;
+}*/
+
+
+/* LARGE CAPITAL LETTER AT THE START OF A LINE 
+COURTESY of CSS-TRICKS  
+
+HTML
+<p>
+<span class="firstcharacter">L</span> orem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique lobortis orci ac lacinia. Fusce eu purus eget diam vehicula auctor nec eu elit. Morbi consequat facilisis orci vel malesuada. Donec ultrices molestie sollicitudin. Aliquam pharetra libero enim. Donec et suscipit massa. Donec dui odio, dignissim non sodales et, tincidunt a sapien. Phasellus elit nibh, adipiscing sed blandit vel, interdum et arcu.
+</p>
+
+CSS
+.firstcharacter { float: left; color: #903; font-size: 75px; 
+line-height: 60px; padding-top: 4px; padding-right: 8px; 
+padding-left: 3px; font-family: Georgia; }
+
+DOING THE SAME WITHOUT THE CLASS IN HTML
+USE PSEUDO CLASS SELECTORS
+
+HTML
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique lobortis orci ac lacinia. Fusce eu purus eget diam vehicula auctor nec eu elit. Morbi consequat facilisis orci vel malesuada. Donec ultrices molestie sollicitudin. Aliquam pharetra libero enim. Donec et suscipit massa. Donec dui odio, dignissim non sodales et, tincidunt a sapien. Phasellus elit nibh, adipiscing sed blandit vel, interdum et arcu.
+</p>
+
+CSS
+p:first-child:first-letter { float: left; color: #903; font-size: 75px; 
+line-height: 60px; padding-top: 4px; padding-right: 8px; padding-left: 3px; 
+font-family: Georgia; }
